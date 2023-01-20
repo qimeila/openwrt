@@ -67,7 +67,7 @@ jobs:
 
     - name: Load custom configuration
       run: |
-        [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
+        [ -e $CONFIG_FILE ] && mv $CONFIG_FILE lede/.config
         chmod +x $DIY_P2_SH
         cd lede
         $GITHUB_WORKSPACE/$DIY_P2_SH
